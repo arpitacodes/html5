@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Form DEMO</title>
+
+	<style>
+
+		form{
+			width: 60%;
+			margin: 0 auto;
+			font-family: sans-serif;
+
+		}
+
+		
+		.ipb {
+			padding-bottom: 30px;
+		}
+
+		.ipb label{
+   			width: 40%;
+    		float: left;
+    		/*padding-left: 15%;*/
+
+
+
+		}
+
+		.ipb input{
+			width: 50%;
+			float: right;
+    		
+		}
+
+		
+
+		.ipb select{
+			width: 52%;
+    		float: right;
+    		
+
+		}
+
+		.ipb textarea{
+			width: 52%;
+    		
+    		clear: both;
+    		
+
+		}
+
+
+		
+
+			/*
+			This how to select input filed type in css
+			*/
+
+		input[type='submit']{
+			float: right;
+			background-color: lightblue;
+			font-size: 18px;
+
+		}
+
+		
+
+		fieldset{
+			border: 5px double lightblue;
+			color: darkgray;
+			margin-bottom: 30px;
+			clear: both;
+			padding-left: 15%;
+		}
+
+		legend{
+			color: black;
+		}
+
+	</style>
+</head>
+<body>
+		<a href="form1.html"><< Form 1</a>	
+
+	
+    <!--http  GET method displaies filed values in URL while POST method does not -->
+	<form action="form.php" method="POST">
+		<h2>HTML5 Form DEMO</h2>
+	<fieldset>
+
+		<legend>This is your form.. </legend>
+
+		<p class="ipb"><label for="f_name">First Name</label>
+		<input type="text" name="f_name" placeholder="First Name.. " id="">
+	</p>
+		<p class="ipb"><label for="l_name">Last Name</label>
+		<input type="text" name="l_name" placeholder="Last Name.. " id="">
+		</p>
+		<p class="ipb"><label for="email">Email </label>
+		<input type="email" name="email" placeholder="email@your.com" id="">
+</p>
+		<p class="ipb"><label for="cellNum">Cell Number</label>
+		<input type="tel" name="cellNum" placeholder="+91 882 6053 287" id="">
+		</p>
+
+	
+		
+		<fieldset class="fbts">
+			<legend>Select Your Choices</legend>
+
+		<input type="checkbox" name="checkbox" value="breakfast" id="">
+		Breakfast
+		<input type="checkbox" name="checkbox" value="dinner" id="">
+		Dinner
+		<input type="checkbox" name="checkbox" value="Tea" id="">
+		Tea
+		</fieldset>
+
+
+		<fieldset class="fbts">
+			<!--All Radio button must have same name   -->
+				<legend>Gender</legend>
+
+		<label for="male">
+		<input type="radio" name="gender" value="male" id="male">
+			Male
+		</label>
+		<label for="Female">
+			<input type="radio" name="gender" value="female" id="female">
+			Female
+		</label>
+		
+		<label for="Female">
+			<input type="radio" name="gender" value="other" id="other">
+			Other
+		</label>		
+
+		</fieldset>
+
+		
+
+		
+		<p class="ipb"><label for="number">Enter Number</label>
+		<input type="number" name="number" id="">
+		
+		</p>
+		<p class="ipb">
+
+		<label for="date">Date Selector</label>
+		<input type="date" name="date" id="">
+
+		</p>
+
+		<p class="ipb"><label for="Select">Select Your Country</label>
+		<select name="country" id="">
+			<option value="none">Select</option>
+			<option value="India">India</option>
+			<option value="Pakistan">Pakistan</option>
+			<option value="China">China</option>
+			<option value="Bangladesh">Bangladesh</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Ireland">Ireland</option>
+			<option value="Canada">Canada</option>
+			<option value="Australia">Australia</option>
+			<option value="Bhutan">Bhutan</option>
+			<option value="India">India</option>
+			<option value="Pakistan">Pakistan</option>
+			<option value="China">China</option>
+			<option value="Bangladesh">Bangladesh</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Ireland">Ireland</option>
+			<option value="Canada">Canada</option>
+			<option value="Australia">Australia</option>
+			<option value="Bhutan">Bhutan</option>
+			<option value="India">India</option>
+			<option value="Pakistan">Pakistan</option>
+			<option value="China">China</option>
+			<option value="Taiwan">Taiwan</option>
+			<option value="Bangladesh">Bangladesh</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Ireland">Ireland</option>
+			<option value="Canada">Canada</option>
+			<option value="Australia">Australia</option>
+			<option value="Bhutan">Bhutan</option>
+			<option value="India">India</option>
+			<option value="Pakistan">Pakistan</option>
+			<option value="China">China</option>
+			<option value="Bangladesh">Bangladesh</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Ireland">Ireland</option>
+			<option value="Canada">Canada</option>
+			<option value="Australia">Australia</option>
+			<option value="Bhutan">Bhutan</option>
+		</select>
+		</p>
+
+		<p class="ipb">
+		<label for="textare">Type your Message</label>
+		<textarea name="msgbox" id="" cols="50" rows="10">
+			
+
+		</textarea>
+</p>
+		
+		<p class="ipb"><label for="color">Color</label>
+		<input type="color" name="color" id="">
+
+</p>
+		<input type="submit" value="Send Form >> ">
+	</fieldset>
+
+
+
+
+	</form>
+	
+</body>
+</html>

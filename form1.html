@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Elemant</title>
+	<style>
+		form{
+			width: 50%;
+			margin: 0 auto;			
+		}
+		
+		input,textarea,select{
+			display:block;
+			padding-top: 10px; 
+			padding-bottom: 10px; 
+			margin-top: 10px;
+			background-color: lightgrey;
+			border-style: solid;
+			border-color: grey;
+			font-family: sans-serif;
+
+		}
+
+		.rf{
+			background-color: lightgrey;
+			width: 30%;
+			margin: 0 auto;
+			padding-left: 5px;
+
+			}
+		h2{
+			color: black;
+		}
+		.selt{
+			border-color: light; 
+		}
+		.pr{
+			font-size: large;
+			color: black;
+			}
+			fieldset{
+				border: double;
+				 border-color: white ; 
+			}
+	</style>
+</head>
+<body>
+	<main>
+	<a href="form.html">Form</a>	
+		<form action="">
+			<h1>Types Of Forms</h1>
+			
+			<fieldset style=" font-size: 18px; border: double;"><legend>Contact us now!</legend>
+		
+		<h3 style="color: lightgrey;">You can contact us using the vontact form below.</h3>
+			
+		   <input type="text" placeholder="Your Name*">
+		   <input type="email" placeholder="Your Email*">
+		   <input type="tel" placeholder="Phone*">
+
+		   <select name="services" id="">
+			<option value="support">Support</option>
+			<option value="sales">Sales</option>
+			<option value="hr">HR</option>
+			<option value="career">Career</option>
+			
+		</select>
+
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+		<input type="submit" value="Send">
+		</fieldset>
+		</form>
+
+
+		<br/> <br/>
+
+		
+		<div class="rf">
+			<fieldset><legend>Registration form</legend>
+			<label>First Name</label>
+			<input style="background-color: white;" type="text" placeholder="" >
+			<label>Last Name</label>
+			<input style="background-color: white;" type="text" placeholder="" >
+			<label>e-mail</label>
+			<input  style="background-color: white;"type="email" placeholder="" >
+			<label>Date of Birth</label>
+			<input style="background-color: white;" type="Date" placeholder="" >
+			<label class="pr">Gender</label>
+			<label> <input type="radio" name="Gender">Male</label>
+			<label><input type="radio" name="Gender">Female </label>
+			<label><input  type="radio" name="Gender">Others</label>
+			<label>Mobile</label>
+			<input style="background-color: white;" type="telyphone" name="">
+			<label>Address</label>
+			<textarea style="background-color: white;" name="" id="" cols="30" rows="10"></textarea>
+			<select class="selt" name="submit/send" id="">
+				<option value="submit">Submit</option>
+				<option value="send">Send</option>
+			</select>
+		  </fieldset>
+		</div>
+		
+
+	</main>
+
+</body>
+</html>
